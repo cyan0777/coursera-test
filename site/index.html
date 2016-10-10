@@ -3,48 +3,60 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Cyan's Dinners</title>
+<title>mod2_solution</title>
 <link rel="stylesheet" href="style.css">
 <style>
 
 /********* Base styles **********/
 * {
   box-sizing: border-box;
-}
+ }
+
 h1 {
-  margin-bottom: 15px;
+   margin-bottom: 15px;
+   font-family: Helvetica;
+   font-transform: uppercase;
+   text-align: center;
+   color: #b30000; 
 }
 
+#box {
+	background-color: #A52A2A;
+}
+
+h2 {
+   float: right;
+   font-family: Helvetica;
+   color: #b30000; 
+   margin: 0px;
+   padding: 2px;
+   border: 1px solid black;
+}
+
+#h2-1 {
+	background-color: #FF0040;
+	position: relative;
+}
+#h2-2 {
+	background-color: #FF4D4D;
+	position: relative;
+}
+#h2-3 {
+	background-color: #FF4000;
+	position: relative;
+}
 p {
-  border: 1px solid black;
-  background-color: #A52A2A;
   width: 90%;
   height: 150px;
   margin-right: auto;
   margin-left: auto;
+  margin-top: auto;
   font-family: Helvetica;
   color: white;
-  text-align: right;
+  overflow: hidden;
+}
 
-}
-#p1 {
-	height :30px;
-	width :auto ;
-	background-color: #FF7F50;
-	position : relative top right;
-}
-#p2 {
-	height :30px;
-	width :auto ;
-	background-color: #FF7F50;
-	position : relative top right;
-}
-#p3 {
-	height :30px;
-	width :auto ;
-	background-color: #FF7F50;
-	position : relative top right;
-}
+
 
 /* Simple Responsive Framework. */
 .raw {(max-width : 767px)
@@ -71,13 +83,15 @@ p {
 @media (min-width: 768px) and (max-width: 991px) {
   .col-md-1, .col-md-2, .col-md-3
   {
-    float: left;
     border: 1px solid green;
+    margin: 10px;
   }
   .col-md-1 {
+  	position: static;
     width: 50%;
   }
   .col-md-2 {
+  	position: relative;
     width: 50%;
   }
   .col-md-3 {
@@ -85,22 +99,31 @@ p {
   }
 }
 
-.col-md-3 {
-
-}
-
 </style>
 </head>
 <body>
-<h1>Responsive Layout</h1>
+<h1>Lorem Ipsum</h1>
 
-<div class="row" id="container">
-  <div class="col-lg-3 col-md-2"><p></p><p id="p1">Red</p></div>
+<div class="row">
+  <div class="col-lg-3 col-md-2" id="box">
+  <h2 id="h2-1">什么是Lorem Ipsum?
+  </h2>
+  <p id="content">Lorem Ipsum，也称乱数假文或者哑元文本， 是印刷及排版领域所常用的虚拟文字。由于曾经一台匿名的打印机刻意打乱了一盒印刷字体从而造出一本字体样品书，Lorem Ipsum从西元15世纪起就被作为此领域的标准文本使用。它不仅延续了五个世纪，还通过了电子排版的挑战，其雏形却依然保存至今。在1960年代，”Leatraset”公司发布了印刷着Lorem Ipsum段落的纸张，从而广泛普及了它的使用。最近，计算机桌面出版软件”Aldus PageMaker”也通过同样的方式使Lorem Ipsum落入大众的视野。
+  </p>
+  </div>
 
-  <div class="col-lg-3 col-md-2"><p></p><p id="p2">White</div>
+  <div class="col-lg-3 col-md-2" id="box">
+  <h2 id="h2-2">我们为何用它？</h2>
+  <p id="content">无可否认，当读者在浏览一个页面的排版时，难免会被可阅读的内容所分散注意力。Lorem Ipsum的目的就是为了保持字母多多少少标准及平均的分配，而不是“此处有文本，此处有文本”，从而让内容更像可读的英语。如今，很多桌面排版软件以及网页编辑用Lorem Ipsum作为默认的示范文本，搜一搜“Lorem Ipsum”就能找到这些网站的雏形。这些年来Lorem Ipsum演变出了各式各样的版本，有些出于偶然，有些则是故意的（刻意的幽默之类的）。
+  </p>
+  </div>
 
-  <div class="col-lg-3 col-md-3"><p></p><p id="p4">Soup</div>
-
+  <div class="col-lg-3 col-md-3" id="box">
+  <h2 id="h2-3">它起源于哪里？</h2>
+  <p id="content">恰恰与流行观念相反，Lorem Ipsum并不是简简单单的随机文本。它追溯于一篇公元前45年的经典拉丁著作，从而使它有着两千多年的岁数。弗吉尼亚州Hampden-Sydney大学拉丁系教授Richard McClintock曾在Lorem Ipsum段落中注意到一个涵义十分隐晦的拉丁词语，“consectetur”，通过这个单词详细查阅跟其有关的经典文学著作原文，McClintock教授发掘了这个不容置疑的出处。
+  </p>
+  </div>
+</div>
 
 </body>
 </html>

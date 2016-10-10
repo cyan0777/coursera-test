@@ -1,0 +1,95 @@
+<style>
+
+/********* Base styles **********/
+* {
+  box-sizing: border-box;
+ }
+
+h1 {
+   margin-bottom: 15px;
+   font-family: Helvetica;
+   font-transform: uppercase;
+   text-align: center;
+   color: #b30000; 
+}
+
+#box {
+	background-color: #A52A2A;
+}
+
+h2 {
+   float: right;
+   font-family: Helvetica;
+   color: #b30000; 
+   margin: 0px;
+   padding: 2px;
+   border: 1px solid black;
+}
+
+#h2-1 {
+	background-color: #FF0040;
+	position: relative;
+}
+#h2-2 {
+	background-color: #FF4D4D;
+	position: relative;
+}
+#h2-3 {
+	background-color: #FF4000;
+	position: relative;
+}
+p {
+  width: 90%;
+  height: 150px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: auto;
+  font-family: Helvetica;
+  color: white;
+  overflow: hidden;
+}
+
+
+
+/* Simple Responsive Framework. */
+.raw {(max-width : 767px)
+  width: 100%;
+}
+/********** Large devices only **********/
+@media (min-width : 992px) {
+  .col-lg-1, .col-lg-2, .col-lg-3
+  {
+    float: left;
+    border: 1px solid green;
+  }
+  .col-lg-1 {
+    width: 33.33%;
+  }
+  .col-lg-2 {
+    width: 33.33%;
+  }
+  .col-lg-3 {
+    width: 33.33%;
+  }
+}
+/********** Medium devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  .col-md-1, .col-md-2, .col-md-3
+  {
+    border: 1px solid green;
+    margin: 10px;
+  }
+  .col-md-1 {
+  	position: static;
+    width: 50%;
+  }
+  .col-md-2 {
+  	position: relative;
+    width: 50%;
+  }
+  .col-md-3 {
+    width: 100%;
+  }
+}
+
+</style>

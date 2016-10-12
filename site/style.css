@@ -21,8 +21,6 @@ h2 {
    float: right;
    font-family: Helvetica;
    color: #b30000; 
-   margin: 0px;
-   padding: 2px;
    border: 1px solid black;
 }
 
@@ -77,14 +75,12 @@ p {
   .col-md-1, .col-md-2, .col-md-3
   {
     border: 1px solid green;
-    margin: 10px;
   }
   .col-md-1 {
-  	position: static;
     width: 50%;
+    margin:  0px；
   }
   .col-md-2 {
-  	position: relative;
     width: 50%;
   }
   .col-md-3 {
